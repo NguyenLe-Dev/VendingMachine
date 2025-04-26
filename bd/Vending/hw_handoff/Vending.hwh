@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 16 14:26:14 2025" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35ti" NAME="Vending" PACKAGE="cpg236" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="switches" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_switches">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="switches"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_btn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="btn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_clr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="clr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_an">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="an"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="ca" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_ca">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="ca"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="curr_amountt" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_curr_amountt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="curr_amountt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="pricee" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_pricee">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VendingController_0" PORT="pricee"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/VendingController_0" HWVERSION="1.0" INSTANCE="VendingController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="VendingController" VLNV="xilinx.com:module_ref:VendingController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="zero" VALUE="0"/>
+        <PARAMETER NAME="five" VALUE="1"/>
+        <PARAMETER NAME="ten" VALUE="2"/>
+        <PARAMETER NAME="fifteen" VALUE="3"/>
+        <PARAMETER NAME="twenty" VALUE="4"/>
+        <PARAMETER NAME="twentyfive" VALUE="5"/>
+        <PARAMETER NAME="thirty" VALUE="6"/>
+        <PARAMETER NAME="thirtyfive" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="Vending_VendingController_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="switches" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_switches">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="switches"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_btn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="External_Ports_clr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_an">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="an"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="ca" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_ca">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ca"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="curr_amountt" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_curr_amountt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="curr_amountt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pricee" RIGHT="0" SIGIS="undef" SIGNAME="VendingController_0_pricee">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pricee"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

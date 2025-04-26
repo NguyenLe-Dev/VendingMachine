@@ -1,0 +1,165 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9516FB602CE45529",
+      "device": "xc7a35ticpg236-1L",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vendd_0": ""
+    },
+    "ports": {
+      "switches": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "clr": {
+        "direction": "I"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "ca": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      }
+    },
+    "components": {
+      "vendd_0": {
+        "vlnv": "xilinx.com:module_ref:vendd:1.0",
+        "xci_name": "design_1_vendd_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vendd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "switches": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "btn": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "ca": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "switches_1": {
+        "ports": [
+          "switches",
+          "vendd_0/switches"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "vendd_0/btn"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "vendd_0/clk"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "vendd_0/clr"
+        ]
+      },
+      "vendd_0_led": {
+        "ports": [
+          "vendd_0/led",
+          "led"
+        ]
+      },
+      "vendd_0_an": {
+        "ports": [
+          "vendd_0/an",
+          "an"
+        ]
+      },
+      "vendd_0_ca": {
+        "ports": [
+          "vendd_0/ca",
+          "ca"
+        ]
+      }
+    }
+  }
+}

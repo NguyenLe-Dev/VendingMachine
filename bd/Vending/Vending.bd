@@ -1,0 +1,197 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF100C80D6E5E7377",
+      "device": "xc7a35ticpg236-1L",
+      "name": "Vending",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "VendingController_0": ""
+    },
+    "ports": {
+      "switches": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Vending_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "clr": {
+        "direction": "I"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "ca": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "curr_amountt": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "pricee": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "VendingController_0": {
+        "vlnv": "xilinx.com:module_ref:VendingController:1.0",
+        "xci_name": "Vending_VendingController_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VendingController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "switches": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "btn": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Vending_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "ca": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "curr_amountt": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "pricee": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "switches_1": {
+        "ports": [
+          "switches",
+          "VendingController_0/switches"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "VendingController_0/btn"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "VendingController_0/clk"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "VendingController_0/clr"
+        ]
+      },
+      "VendingController_0_led": {
+        "ports": [
+          "VendingController_0/led",
+          "led"
+        ]
+      },
+      "VendingController_0_an": {
+        "ports": [
+          "VendingController_0/an",
+          "an"
+        ]
+      },
+      "VendingController_0_ca": {
+        "ports": [
+          "VendingController_0/ca",
+          "ca"
+        ]
+      },
+      "VendingController_0_curr_amountt": {
+        "ports": [
+          "VendingController_0/curr_amountt",
+          "curr_amountt"
+        ]
+      },
+      "VendingController_0_pricee": {
+        "ports": [
+          "VendingController_0/pricee",
+          "pricee"
+        ]
+      }
+    }
+  }
+}

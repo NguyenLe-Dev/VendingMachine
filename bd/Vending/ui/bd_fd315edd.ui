@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-428,-138",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port clr -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace portBus switches -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 2 -x 350 -y 60 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 2 -x 350 -y 80 -defaultsOSRD
+preplace portBus ca -pg 1 -lvl 2 -x 350 -y 100 -defaultsOSRD
+preplace portBus curr_amountt -pg 1 -lvl 2 -x 350 -y 120 -defaultsOSRD
+preplace portBus pricee -pg 1 -lvl 2 -x 350 -y 140 -defaultsOSRD
+preplace inst VendingController_0 -pg 1 -lvl 1 -x 170 -y 100 -defaultsOSRD
+preplace netloc switches_1 1 0 1 NJ 70
+preplace netloc btn_1 1 0 1 NJ 90
+preplace netloc clk_1 1 0 1 NJ 110
+preplace netloc clr_1 1 0 1 NJ 130
+preplace netloc VendingController_0_led 1 1 1 NJ 60
+preplace netloc VendingController_0_an 1 1 1 NJ 80
+preplace netloc VendingController_0_ca 1 1 1 NJ 100
+preplace netloc VendingController_0_curr_amountt 1 1 1 NJ 120
+preplace netloc VendingController_0_pricee 1 1 1 NJ 140
+levelinfo -pg 1 -10 170 350
+pagesize -pg 1 -db -bbox -sgen -150 0 520 200
+"
+}
+0

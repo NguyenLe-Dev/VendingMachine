@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/15/2025 02:47:05 PM
+// Create Date: 03/25/2025 04:20:14 PM
 // Design Name: 
-// Module Name: clock_1k
+// Module Name: clock_e
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clock_1k(
+module clock_e(
     input clk,
     input clr,
     output reg c_e
@@ -28,7 +28,8 @@ module clock_1k(
     integer count =0;
     integer bruh=0;
     always @(posedge clk) begin
-        if(count == 49999) begin
+    
+        if(count == 49999999) begin
         count <= 0;
         bruh <= 1;
         end else begin
